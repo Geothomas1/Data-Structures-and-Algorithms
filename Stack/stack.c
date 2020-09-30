@@ -10,12 +10,12 @@ char c;
     
 int main()
 {
-   
-printf("Enter Your Choice 1 for push  / 2 for pop");
-   scanf("%d",&k);
-
    do
    { 
+    printf("Enter Your Choice:\n");
+    printf("1:PUSH\n");
+    printf("2:POP\n");
+    scanf("%d",&k);
    switch(k)
    {
        case 1:pushs();
@@ -24,7 +24,7 @@ printf("Enter Your Choice 1 for push  / 2 for pop");
               break; 
        default:printf("You are enter worng input:");
                break;
-        y
+        
    } 
    printf("do you want to continue:");
    scanf("%s",&c);
@@ -47,12 +47,33 @@ printf("Enter Your Choice 1 for push  / 2 for pop");
         printf("Stack Elements Are:");
         for(int i=0;i<top;i++)
         {
-            printf("%d",stack[i]);
+            printf("%d\t",stack[i]);
         }
     }
 
 }
 void pops()
 {
-    printf("Haii");
+    int topelemt;
+   if(top==0)
+   {
+       printf("<<<<<<Stack Underflow>>>>>>");
+   }else{
+
+topelemt=stack[top];
+top-=1;
+if(top!=0)
+{
+printf("Stack Elements Are:");
+        for(int i=0;i<top;i++)
+        {
+            printf("%d\t",stack[i]);
+        }
+
+   }else
+   {
+       printf("----There is no element in stack-----");
+   }
+   
+}
 }
