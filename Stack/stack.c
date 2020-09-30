@@ -1,33 +1,38 @@
 //Stack using Array
 #include<stdio.h>
 int max=10;
-int top=-1;
-int stack[max];
+int top=0;
+int stack[10];
+void pushs();
+void pops();
+int k;
+char c;
     
 int main()
 {
-   char cho[10];
-   char c;
+   
+printf("Enter Your Choice 1 for push  / 2 for pop");
+   scanf("%d",&k);
 
    do
+   { 
+   switch(k)
    {
-   printf("Enter Your Choice push/pop");
-   scanf("%s",&cho);
-      
-   swith(cho)
-   {
-       case "push":push();
-                   break;
-       case "pop":pop();
-                  break; 
-       default:print("You are enter worng input:")
+       case 1:pushs();
+              break;
+       case 2:pops();
+              break; 
+       default:printf("You are enter worng input:");
                break;
-        
+        y
    } 
-   }while (c=='y');
+   printf("do you want to continue:");
+   scanf("%s",&c);
+   }while (c =='y');
+   
 }
    
-   void push()
+   void pushs()
    {
        if(top==max)
     {
@@ -36,14 +41,18 @@ int main()
     {
         int new;
         printf("Enter the New Stack Element:");
-        scanf("$d",&new);
+        scanf("%d",&new);
         stack[top]=new;
         top=top+1;
         printf("Stack Elements Are:");
-        for(i=0;i<top;i++)
+        for(int i=0;i<top;i++)
         {
-            print("%d",stack[i]);
+            printf("%d",stack[i]);
         }
     }
 
+}
+void pops()
+{
+    printf("Haii");
 }
