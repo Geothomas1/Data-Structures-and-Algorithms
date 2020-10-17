@@ -39,10 +39,10 @@ int main()
         printf("Stack is Full !!!");
     }else
     {
-        int new;
+        int newe;
         printf("Enter the New Stack Element:");
-        scanf("%d",&new);
-        stack[top]=new;
+        scanf("%d",&newe);
+        stack[top]=newe;
         top=top+1;
         printf("Stack Elements Are:");
         for(int i=0;i<top;i++)
