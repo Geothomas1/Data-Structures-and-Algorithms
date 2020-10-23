@@ -3,5 +3,7 @@ every type of coding mainly focus on data structures and algorithms so this repo
 1:Arrays
 2:Stack
 3:Queue
+4:Knaosack
+5:Sum of Subset
 
 
